@@ -9,6 +9,7 @@
     <link rel="canonical" href="<?= base_url() ?>">
     <meta name="robots" content="index, follow" />
     <meta name="author" content="xunny.id">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -181,8 +182,36 @@
                     <h2>Solusi Unggulan</h2>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                    <div class="product-box" id="product-box-1"></div>
+                    <h3 class='text-center'>Terra Project Management</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                    <div class="product-box" id="product-box-2"></div>
+                    <h3 class='text-center'>Terra Distribution System</h3>
+                </div>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src='<?= base_url() ?>/assets/LogoLight.png' alt='PT Terra Nusa Teknologi Logo' title='PT Terra Nusa Teknologi Logo'>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class='text-start'>Kontak Kami</h2>
+                    <p>Ruko Asia Tropis AT12 No. 21, Kota Bekasi, Jawa Barat 17132</p>
+                    <p>(021) 88898292</p>
+                    <a href='mailto:marketing@terranusa.tech'>marketing@terranusa.tech</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
@@ -196,12 +225,12 @@
             centeredSlides: true,
             breakpoints: {
                 768: {
-                    slidesPerView: 1,
-                    spaceBetween: 50,
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
                 },
                 992: {
-                    slidesPerView: 1.5,
-                    spaceBetween: 50,
+                    slidesPerView: 2,
+                    spaceBetween: 20,
                 }
             },
             keyboard: {
@@ -222,7 +251,7 @@
             breakpoints: {
                 768: {
                     slidesPerView: 1.5,
-                    spaceBetween: 50,
+                    spaceBetween: 20,
                 },
                 992: {
                     slidesPerView: 2,
