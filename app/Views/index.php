@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= $locale ?>">
 
 <head>
     <meta charset="UTF-8">
     <title>PT Terra Nusa Teknologi | IT Solutions</title>
-    <meta name="description" content="PT Terra Nusa Teknologi, perusahaan yang bergerak di bidang pengembangan piranti lunak. Berdiri sejak 2022 berlokasi di Kota Bekasi, Jawa Barat, kami hadir untuk membantu merancang, membangun, mengimplementasikan, serta memelihara sistem manajemen perusahaan - perusahaan baik di skala UMKM hingga menengah.">
+    <meta name="description" content="<?= lang("Test.description") ?>">
     <meta name="keywords" content="PT Terra Nusa Teknologi, Android application, Web application, IT Solutions">
     <link rel="canonical" href="<?= base_url() ?>">
     <meta name="robots" content="index, follow" />
@@ -14,45 +14,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="<?= base_url() ?>/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>/css/dark-style.css">
 </head>
 
 <body>
-    <nav class="container sticky-top">
-        <div class="row py-2">
-            <div class="col-lg-6">
-                <a class="navbar-brand" href='<?= base_url() ?>'>
-                    <img src='<?= base_url() ?>/assets/LogoLight.png' title="Logo PT Terra Nusa Teknologi" alt="Logo PT Terra Nusa Teknologi">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <ul>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
+    <nav class="sticky-top">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-lg-6">
+                    <a class="navbar-brand" href='<?= base_url() ?>'>
+                        <img src='<?= base_url() ?>/assets/LogoLight.png' title="Logo PT Terra Nusa Teknologi" alt="Logo PT Terra Nusa Teknologi">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <ul>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
     <header>
         <div class="container">
             <div class="row mt-3 justify-content-center">
-                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 py-5 order-lg-1 order-2">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 py-5 order-lg-1 order-2 px-2">
                     <h1>Menghubungkan Ide Anda <strong>Tanpa Batas</strong><br><span>Dengan Teknologi</span></h1>
                     <p>Di era teknologi 4.0, pandangan kita terhadap bisnis dan cara berinteraksi dengan konsumen telah berubah. PT Terra Nusa Teknologi hadir untuk menjawab kebutuhan tersebut, dengan personel yang terpercaya dan berpengalaman, PT. Terra Nusa Teknologi berkomitmen untuk membantu anda dalam melakukan digitalisasi perusahaan. Mari menyongsong era teknologi 4.0 bersama kami !</p>
 
                     <button type="button" aria-label="Learn more button">Mulai</button>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 py-5 order-lg-2 order-1">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 py-5 order-lg-2 order-1 px-2">
                     <img src="<?= base_url() ?>/assets/Hero.png" class="w-100" alt="Hero image" title="Technology Illustration">
                 </div>
             </div>
@@ -61,7 +64,7 @@
     <section id="about" class="py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 mb-3">
                     <h2>Tentang Kami</h2>
                     <h3>Kami menyediakan solusi IT untuk kebutuhan operasional perusahaan anda</h3>
 
@@ -73,68 +76,49 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <h4>Business</h4>
+                                    <img src='<?= base_url() ?>/assets/icons/Business.png' alt='Ikon bisnis'>
+                                    <h4>Bisnis</h4>
                                     <ul>
                                         <li>
-                                            <h5>Digital and IT Advisory</h5>
+                                            <h5>Konsultasi IT dan Produk Digital</h5>
                                         </li>
                                         <li>
 
-                                            <h5>Development Consultation</h5>
+                                            <h5>Konsultasi Pengembangan Digital</h5>
                                         </li>
                                         <li>
-                                            <h5>Database Consultation</h5>
+                                            <h5>Konsultasi Database</h5>
                                         </li>
                                         <li>
-                                            <h5>System Monitoring</h5>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <h4>Development</h4>
-                                    <ul>
-                                        <li>
-                                            <h5>IOS & Android Development</h5>
-                                        </li>
-                                        <li>
-                                            <h5>Web Development</h5>
-                                        </li>
-                                        <li>
-                                            <h5>Search Engine Optimization</h5>
+                                            <h5>Monitor Sistem Digital</h5>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <h4>Development</h4>
+                                    <img src='<?= base_url() ?>/assets/icons/Development.png' alt='Ikon pengembangan'>
+                                    <h4>Pengembangan</h4>
                                     <ul>
                                         <li>
-                                            <h5>IOS & Android Development</h5>
+                                            <h5>Pengembangan IOS & Android</h5>
                                         </li>
                                         <li>
-                                            <h5>Web Development</h5>
-                                        </li>
-                                        <li>
-                                            <h5>Search Engine Optimization</h5>
+                                            <h5>Pengembangan Web</h5>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card">
-                                    <h4>Development</h4>
+                                    <img src='<?= base_url() ?>/assets/icons/Development.png'  alt='Ikon kreatif'>
+                                    <h4>Kreatif</h4>
                                     <ul>
                                         <li>
-                                            <h5>IOS & Android Development</h5>
+                                            <h5>Desain UI dan UX</h5>
                                         </li>
                                         <li>
-                                            <h5>Web Development</h5>
-                                        </li>
-                                        <li>
-                                            <h5>Search Engine Optimization</h5>
+                                            <h5><i>Search Engine Optimization</i></h5>
                                         </li>
                                     </ul>
                                 </div>
@@ -182,19 +166,31 @@
                     <h2>Solusi Unggulan</h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mb-3">
                 <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12">
                     <div class="product-box" id="product-box-1"></div>
                     <h3 class='text-center'>Terra Project Management</h3>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mb-3">
                 <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12">
                     <div class="product-box" id="product-box-2"></div>
                     <h3 class='text-center'>Terra Distribution System</h3>
                 </div>
             </div>
+
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a role="button">Lihat lebih</a>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section id='contact' class='py-5 text-center'>
+        <h2>Kontak Kami</h2>
+        <h3 class='mb-5'>Ada Pertanyaan? Jangan sungkan untuk kontak kami</h3>
+        <a role='button'>Hubungi kami sekarang</a>
     </section>
 
     <footer>
@@ -205,7 +201,7 @@
                 </div>
                 <div class="col-lg-6">
                     <h2 class='text-start'>Kontak Kami</h2>
-                    <p>Ruko Asia Tropis AT12 No. 21, Kota Bekasi, Jawa Barat 17132</p>
+                    <p>Ruko Asia Tropis AT12 No. 21, Kota Bekasi, Jawa Barat, 17132, Indonesia</p>
                     <p>(021) 88898292</p>
                     <a href='mailto:marketing@terranusa.tech'>marketing@terranusa.tech</a>
                 </div>
@@ -220,7 +216,7 @@
         const techSwipe = new Swiper('#tech-swipe', {
             direction: 'horizontal',
             loop: true,
-            slidesPerView: 1,
+            slidesPerView: 1.5,
             spaceBetween: 10,
             centeredSlides: true,
             breakpoints: {
@@ -229,7 +225,7 @@
                     spaceBetween: 30,
                 },
                 992: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                     spaceBetween: 20,
                 }
             },
@@ -244,17 +240,18 @@
 
         const serviceSwipe = new Swiper('#service-swipe', {
             direction: 'horizontal',
-            loop: true,
+            loop: false,
+            pagination: true,
             slidesPerView: 1,
             spaceBetween: 10,
             centeredSlides: true,
             breakpoints: {
                 768: {
-                    slidesPerView: 1.5,
+                    slidesPerView: 1.1,
                     spaceBetween: 20,
                 },
                 992: {
-                    slidesPerView: 2,
+                    slidesPerView: 1.5,
                     spaceBetween: 50,
                 }
             },

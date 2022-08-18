@@ -19,16 +19,11 @@ button{
 
 
 /* Navigation bar Styling */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+nav {
+  background-color:#0d152e;
 }
 
-nav li {
-  float: left;
-}
+
 
 nav li a {
   display: block;
@@ -43,29 +38,9 @@ nav .nav-link {
 }
 
 /* General Styling */
-h2{
-  color:#437EEB;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size:1.2rem;
-  font-weight:400;
-  margin-bottom:2rem;
-  text-align:center;
-}
 
-.card{
-  height:100%;
-  color:#333;
-  padding:2rem 1rem;
-}
-
-.card h4{
-  text-align: center;
-}
-
-.card ul{
-  list-style-type:none;
-  text-align: center;
+a {
+  color:white;
 }
 
 /* Header */
@@ -74,30 +49,9 @@ header{
   color:white;
 }
 
-header h1{
-  font-size:3rem;
-  line-height: 4rem;
-  font-weight:400;
-}
-
-header h1 span {
-  font-size:2rem;
-}
-
-header p{
-  font-size:1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height:1.5rem;
-}
-
-button {
-  margin-top:2rem;
-  background-color:transparent;
-  border-radius:20px;
-  padding:0.5rem 3rem;
+button, a[role=button]{
   border: 1px solid white;
-  color:white;
+  color:white!important;
 }
 
 #about, #solution{
@@ -105,49 +59,23 @@ button {
   color:white;
 }
 
-#about h3{
-  line-height:1.5;
-  font-size:1.5rem;
-  margin-bottom:2.4rem;
-}
-
-#about p{
-  font-size:1rem;
-  line-height:2;
-}
-
 .product-box{
-  width:100%;
-  aspect-ratio: 16/9;
-  margin-bottom:1rem;
-  margin-top:2rem;
-  border-radius:50px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition:0.5s all ease;
 }
 
 .product-box:hover{
-  background-size: 110% 110%!important;
-  transition:0.5s all ease;
-}
-
-#product-box-1 {
-  background-image:url("../assets/TPM.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#product-box-2 {
-  background-image:url("../assets/TTM.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  cursor:url(../assets/DarkCursorActive.png) 0 0, pointer!important; 
 }
 
 /* Footer */
 
 footer {
+  background-color:#101C3D;
   border-top: 3px solid rgba(0, 0, 0, 0.25);
+  color:white;
+}
+
+
+#contact h3 {
   color:white;
 }
