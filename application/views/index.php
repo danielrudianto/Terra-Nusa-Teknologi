@@ -199,8 +199,8 @@
 
 	<aside id='menu' class='menu-background'>
 		<div class='menu'>
-			<button role='button' id='modeSmallButton' class='mt-0 mode-small-button' onclick="closeMenu();switchMode()" aria-label="Switch mode"></button>
-			<button class='close-small-button' id='close-button' onclick="closeMenu()"><img src='<?= base_url() ?>/assets/icons/closeDark.png'></button>
+			<button aria-label="Tombol pengubah tema" role='button' id='modeSmallButton' class='mt-0 mode-small-button' onclick="closeMenu();switchMode()" aria-label="Switch mode"></button>
+			<button aria-label="Tombol penutup menu" class='close-small-button' id='close-button' onclick="closeMenu()"><img src='<?= base_url() ?>/assets/icons/CloseDark.png' alt='Ikon tutup' title='Tutup menu'></button>
 			<ul>
 				<li class="vertical-nav-item">
 					<a href="#">Beranda</a>

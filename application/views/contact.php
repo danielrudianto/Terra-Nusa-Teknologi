@@ -28,7 +28,7 @@
 					<a class="navbar-brand" href='<?= base_url() ?>'>
 						<img src='<?= base_url() ?>/assets/LogoLight.png' title="Logo PT Terra Nusa Teknologi" alt="Logo PT Terra Nusa Teknologi">
 					</a>
-					<button id='openMenuButton' onclick='openMenu()' class='d-md-none d-inline-block float-right' type='button'><img src="<?= base_url() ?>/assets/icons/menu.png">
+					<button aria-label="Tombol menu" id='openMenuButton' onclick='openMenu()' class='d-md-none d-inline-block float-right' type='button'><img src="<?= base_url() ?>/assets/icons/Menu.png" alt='Ikon menu' title='Ikon menu'>
 					</button>
 				</div>
 				<div class="col-lg-6 col-md-6 d-md-block d-none">
@@ -88,12 +88,10 @@
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12 order-lg-2 order-1">
 					<p class='contact-form-title'>Kami berharap dapat mendengar dari anda kapanpun.</p>
-					<form 
-						onsubmit="submitForm()"
-						class='contact-form'>
+					<form onsubmit="submitForm()" class='contact-form'>
 						<input required type='text' placeholder='Nama'>
 						<input required type='email' placeholder='Email'>
-						<input  required type='tel' placeholder='Nomor Telepon'>
+						<input required type='tel' placeholder='Nomor Telepon'>
 						<textarea required type='text' style='resize:none' rows='5' placeholder='Pesan anda'></textarea>
 
 						<button type='submit'>Kirim</button>
@@ -105,8 +103,8 @@
 
 	<aside id='menu' class='menu-background'>
 		<div class='menu'>
-			<button role='button' id='modeSmallButton' class='mt-0 mode-small-button' onclick="closeMenu();switchMode()" aria-label="Switch mode"></button>
-			<button class='close-small-button' id='close-button' onclick="closeMenu()"><img src='<?= base_url() ?>/assets/icons/closeDark.png'></button>
+			<button aria-label="Tombol pengubah tema" role='button' id='modeSmallButton' class='mt-0 mode-small-button' onclick="closeMenu();switchMode()" aria-label="Switch mode"></button>
+			<button aria-label="Tombol penutup menu" class='close-small-button' id='close-button' onclick="closeMenu()"><img src='<?= base_url() ?>/assets/icons/CloseDark.png' alt='Ikon tutup' title='Tutup menu'></button>
 			<ul>
 				<li class="vertical-nav-item">
 					<a href="#">Beranda</a>
