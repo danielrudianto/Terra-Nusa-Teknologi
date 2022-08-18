@@ -6,12 +6,25 @@
 	<title>PT Terra Nusa Teknologi | IT Solutions | Kontak Kami</title>
 	<meta name="description" content="PT Terra Nusa Teknologi, perusahaan yang bergerak di bidang pengembangan piranti lunak. Berdiri sejak 2022 berlokasi di Kota Bekasi, Jawa Barat, kami hadir untuk membantu merancang, membangun, mengimplementasikan, serta memelihara sistem manajemen perusahaan - perusahaan baik di skala UMKM hingga menengah.">
 	<meta name="keywords" content="PT Terra Nusa Teknologi, Android application, Web application, IT Solutions">
-	<link rel="canonical" href="<?= base_url() ?>Kontak">
+	<link rel="canonical" href="<?= base_url() ?>Contact">
 	<meta name="robots" content="index, follow" />
 	<meta name="author" content="xunny.id">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?= base_url() ?>/assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?= base_url() ?>/assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>/assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="<?= base_url() ?>/assets/favicons/site.webmanifest">
+
+	<meta property="og:image" content="<?= base_url() ?>/assets/CoverImage.png" />
+	<meta property="og:title" content="PT Terra Nusa Teknologi" />
+	<meta property="og:description" content="PT Terra Nusa Teknologi, perusahaan yang bergerak di bidang pengembangan piranti lunak. Berdiri sejak 2022 berlokasi di Kota Bekasi, Jawa Barat, kami hadir untuk membantu merancang, membangun, mengimplementasikan, serta memelihara sistem manajemen perusahaan - perusahaan baik di skala UMKM hingga menengah." />
+	<meta property="og:locale" content="id" />
+	<meta property="og:type" content="website" />
+
+	<meta name='theme-color' content='#437EEB'>
+
+	<link rel="stylesheet" href="<?= base_url() ?>css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 	<link rel="stylesheet" href="<?= base_url() ?>css/main-style.css">
