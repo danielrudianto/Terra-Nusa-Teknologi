@@ -193,7 +193,7 @@
 
 	<section id='contact' class='py-5 text-center'>
 		<h2>Kontak Kami</h2>
-		<h3 class='mb-5'>Ada Pertanyaan? Jangan sungkan untuk kontak kami</h3>
+		<h3 class='mb-5'>Siap untuk melakukan transformasi untuk perusahaan anda? Konsultasikan dengan kami</h3>
 		<a role='button' href="<?= site_url('Contact') ?>">Hubungi kami sekarang</a>
 	</section>
 
