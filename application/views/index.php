@@ -112,7 +112,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="card">
-									<img src='<?= base_url() ?>/assets/icons/Development.png' alt='Ikon kreatif'>
+									<img src='<?= base_url() ?>/assets/icons/Creative.png' alt='Ikon kreatif'>
 									<h4>Kreatif</h4>
 									<ul>
 										<li>
