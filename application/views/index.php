@@ -21,6 +21,8 @@
 	<meta property="og:description" content="PT Terra Nusa Teknologi, perusahaan yang bergerak di bidang pengembangan piranti lunak. Berdiri sejak 2022 berlokasi di Kota Bekasi, Jawa Barat, kami hadir untuk membantu merancang, membangun, mengimplementasikan, serta memelihara sistem manajemen perusahaan - perusahaan baik di skala UMKM hingga menengah." />
 	<meta property="og:locale" content="id" />
 	<meta property="og:type" content="website" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="627" />
 
 	<meta name='theme-color' content='#437EEB'>
 
