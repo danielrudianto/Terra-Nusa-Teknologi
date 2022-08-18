@@ -1,0 +1,97 @@
+html,
+body {
+  background-color: #FFFFFF;
+  cursor:url(../assets/DarkCursor.png), auto;
+}
+
+body.dark::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body.dark::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color:#030816;
+}
+ 
+body.dark::-webkit-scrollbar-thumb {
+  background-color: #437eeb;
+	border-radius:2px;
+}
+
+a{
+  cursor:url(../assets/DarkCursorActive.png) 0 0, pointer; 
+}
+
+button{
+  cursor:url(../assets/DarkCursorActive.png) 0 0, pointer!important; 
+  transition:0.3s all ease;
+}
+
+
+/* Navigation bar Styling */
+nav {
+  background-color:#ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav .navbar-brand img{
+	filter: invert(100%);
+}
+
+nav ul li a {
+  display: block;
+  color: #343434;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav .nav-link {
+  color: #343434;
+}
+
+/* General Styling */
+
+a {
+  color:#343434;
+}
+
+/* Header */
+
+header{
+  color:#343434;
+}
+
+button, a[role=button]{
+  border: 1px solid #343434;
+  color:#343434!important;
+}
+
+#about, #solution{
+  background-color:#F9F9F9;
+  color:#343434;
+}
+
+.product-box{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.product-box:hover{
+  cursor:url(../assets/DarkCursorActive.png) 0 0, pointer!important; 
+}
+
+/* Footer */
+
+footer {
+  background-color:#F9F9F9;
+  border-top: 3px solid rgba(0, 0, 0, 0.25);
+  color:#343434;
+}
+
+
+#contact h3 {
+  color:#343434;
+}
+
+#tech-swipe .swiper-slide img{
+	filter: invert(100%);
+}

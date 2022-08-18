@@ -1,0 +1,97 @@
+html,
+body.dark {
+  background-color: #0d152e;
+  cursor:url(../assets/DarkCursor.png), auto;
+}
+
+body.dark::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body.dark::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color:#030816;
+}
+ 
+body.dark::-webkit-scrollbar-thumb {
+  background-color: #437eeb;
+	border-radius:2px;
+}
+
+.dark a{
+  cursor:url(../assets/DarkCursorActive.png) 0 0, pointer; 
+}
+
+.dark button{
+  cursor:url(../assets/DarkCursorActive.png) 0 0, pointer!important; 
+  transition:0.3s all ease;
+}
+
+
+/* Navigation bar Styling */
+.dark nav {
+  background-color:#0d152e;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dark nav .navbar-brand img{
+	filter: invert(0%);
+}
+
+.dark nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dark nav .nav-link {
+  color: white;
+}
+
+/* General Styling */
+
+.dark a {
+  color:white;
+}
+
+/* Header */
+
+.dark header{
+  color:white;
+}
+
+.dark button:not(.mode-button), a[role=button]{
+  border: 1px solid white;
+  color:white!important;
+}
+
+.dark #about, .dark #solution{
+  background-color:#101C3D;
+  color:white;
+}
+
+.dark .product-box{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.dark .product-box:hover{
+  cursor:url(../assets/DarkCursorActive.png) 0 0, pointer!important; 
+}
+
+/* Footer */
+
+.dark footer {
+  background-color:#101C3D;
+  border-top: 3px solid rgba(0, 0, 0, 0.25);
+  color:white;
+}
+
+
+.dark #contact h3 {
+  color:white;
+}
+
+.dark #tech-swipe .swiper-slide img{
+	filter: invert(0%);
+}
