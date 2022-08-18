@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="id">
 
 <head>
 	<meta charset="UTF-8">
 	<title>PT Terra Nusa Teknologi | IT Solutions</title>
-	<meta name="description" content="">
+	<meta name="description" content="PT Terra Nusa Teknologi, perusahaan yang bergerak di bidang pengembangan piranti lunak. Berdiri sejak 2022 berlokasi di Kota Bekasi, Jawa Barat, kami hadir untuk membantu merancang, membangun, mengimplementasikan, serta memelihara sistem manajemen perusahaan - perusahaan baik di skala UMKM hingga menengah.">
 	<meta name="keywords" content="PT Terra Nusa Teknologi, Android application, Web application, IT Solutions">
 	<link rel="canonical" href="<?= base_url() ?>">
 	<meta name="robots" content="index, follow" />
@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+	<link rel="stylesheet" href="<?= base_url() ?>css/main-style.css">
 	<link rel="stylesheet" href="<?= base_url() ?>css/style.css">
 	<link rel="stylesheet" href="<?= base_url() ?>css/dark-style.css">
 	<link rel="stylesheet" href="<?= base_url() ?>css/light-style.css">
@@ -22,22 +23,24 @@
 <body>
 	<nav class="sticky-top">
 		<div class="container">
-			<div class="row py-2">
-				<div class="col-lg-6">
+			<div class="row py-2 justify-content-center">
+				<div class="col-lg-6 col-md-6 col-sm-10 col-xs-12 text-start">
 					<a class="navbar-brand" href='<?= base_url() ?>'>
 						<img src='<?= base_url() ?>/assets/LogoLight.png' title="Logo PT Terra Nusa Teknologi" alt="Logo PT Terra Nusa Teknologi">
 					</a>
+					<button id='openMenuButton' onclick='openMenu()' class='d-md-none d-inline-block float-right' type='button'><img src="<?= base_url() ?>/assets/icons/menu.png">
+					</button>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 d-md-block d-none">
 					<ul>
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Beranda</a>
+							<a class="nav-link" href="#" disabled>Beranda</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Tentang</a>
+							<a class="nav-link" href="<?= site_url('About') ?>">Tentang</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Kontak</a>
+							<a class="nav-link" href="<?= site_url('Contact') ?>">Kontak</a>
 						</li>
 						<li class='nav-item'>
 							<button role='button' id='modebutton' class='mt-0 mode-button' onclick="switchMode()" aria-label="Switch mode"></button>
@@ -194,21 +197,23 @@
 		<a role='button' href="<?= site_url('Contact') ?>">Hubungi kami sekarang</a>
 	</section>
 
-	<footer>
-		<div class="container py-5">
-			<div class="row">
-				<div class="col-lg-6">
-					<img src='<?= base_url() ?>/assets/LogoLight.png' alt='PT Terra Nusa Teknologi Logo' title='PT Terra Nusa Teknologi Logo'>
-				</div>
-				<div class="col-lg-6">
-					<h2 class='text-start'>Kontak Kami</h2>
-					<p>Ruko Asia Tropis AT12 No. 21, Kota Bekasi, Jawa Barat, 17132, Indonesia</p>
-					<p>(021) 88898292</p>
-					<a href='mailto:marketing@terranusa.tech'>marketing@terranusa.tech</a>
-				</div>
-			</div>
+	<aside id='menu' class='menu-background'>
+		<div class='menu'>
+			<button role='button' id='modeSmallButton' class='mt-0 mode-small-button' onclick="closeMenu();switchMode()" aria-label="Switch mode"></button>
+			<button class='close-small-button' id='close-button' onclick="closeMenu()"><img src='<?= base_url() ?>/assets/icons/closeDark.png'></button>
+			<ul>
+				<li class="vertical-nav-item">
+					<a href="#">Beranda</a>
+				</li>
+				<li class="vertical-nav-item">
+					<a href="<?= site_url('About') ?>">Tentang</a>
+				</li>
+				<li class="vertical-nav-item">
+					<a href="<?= site_url('Contact') ?>">Kontak</a>
+				</li>
+			</ul>
 		</div>
-	</footer>
+	</aside>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
@@ -217,17 +222,21 @@
 		const techSwipe = new Swiper('#tech-swipe', {
 			direction: 'horizontal',
 			loop: true,
-			slidesPerView: 1.5,
+			slidesPerView: 1,
 			spaceBetween: 10,
 			centeredSlides: true,
 			breakpoints: {
-				768: {
+				576: {
 					slidesPerView: 1.5,
 					spaceBetween: 30,
 				},
+				768: {
+					slidesPerView: 1.8,
+					spaceBetween: 30,
+				},
 				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
+					slidesPerView: 2.5,
+					spaceBetween: 30,
 				}
 			},
 			keyboard: {
@@ -243,13 +252,17 @@
 			direction: 'horizontal',
 			loop: false,
 			pagination: true,
-			slidesPerView: 1,
+			slidesPerView: 1.2,
 			spaceBetween: 10,
 			centeredSlides: true,
 			breakpoints: {
+				576: {
+					slidesPerView: 1.3,
+					spaceBetween: 30,
+				},
 				768: {
-					slidesPerView: 1.1,
-					spaceBetween: 20,
+					slidesPerView: 1.5,
+					spaceBetween: 30,
 				},
 				992: {
 					slidesPerView: 1.5,

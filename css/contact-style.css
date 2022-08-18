@@ -1,0 +1,122 @@
+header{
+	background-color:#437EEB;
+	padding:5rem 0rem;
+	background-image:url("../assets/Background.png");
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: bottom;
+}
+
+#contact{
+	padding-top:3rem;
+	background-color:white;
+}
+
+.dark #contact{
+	background-color:#101C3D;
+}
+
+#info ul {
+	list-style-type: none;
+}
+
+#info ul li{
+	padding-left:36px;
+	position:relative;
+	display:block;
+}
+
+#info ul li img {
+	position:absolute;
+	left:0;
+}
+
+#info h2{
+	font-size:1rem;
+	font-weight: bold;
+}
+
+#info a{
+	text-decoration: none;
+	color:#343434;
+}
+
+.dark #info a{
+	color:white;
+}
+
+#info .contact-card{
+	color:#343434;
+	background-color:white;
+	position:relative;
+	width:calc(90% - 2rem);
+	top:0%;
+	padding:2rem;
+	padding-left:0rem;
+	filter: drop-shadow(2rem 2rem 0px #f3f3f3);
+	margin-bottom:calc(4rem);
+}
+
+.dark #info .contact-card {
+	color:white;
+	background-color:#0D152E;
+	filter: drop-shadow(2rem 2rem 0px #060B1B);
+}
+
+.contact-form input, .contact-form textarea{
+	width:100%;
+	border-radius: 2px 2px 0px 0px;
+	font-family:'Cairo', sans-serif;
+	border:0;
+	border-bottom:1px solid #565656;
+	padding:0.25rem;
+	padding-bottom:0.5rem;
+	transition:0.3s all ease;
+	margin-bottom:1.5rem;
+	color:#343434;
+}
+
+.dark .contact-form input, .dark .contact-form textarea {
+	width:100%;
+	border-radius: 2px 2px 0px 0px;
+	font-family:'Cairo', sans-serif;
+	border:0;
+	border-bottom:1px solid #565656;
+	padding:0.25rem;
+	padding-bottom:0.5rem;
+	transition:0.3s all ease;
+	margin-bottom:1.5rem;
+	color:white;
+	background:transparent;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+	transition:0.3s all ease;
+	filter: drop-shadow(2px 2px 2px #f3f3f3);
+	outline: 0;
+}
+
+.dark .contact-form input:focus, .dark .contact-form textarea:focus{
+	transition:0.3s all ease;
+	filter: drop-shadow(2px 2px 2px #060B1B);
+	outline: 0;
+}
+
+.contact-form-title{
+	font-weight: 700;
+	font-size:2.5rem;
+	line-height:2.5rem;
+	color:black;
+}
+
+.dark .contact-form-title {
+	color:white;
+}
+
+.contact-form button{
+	padding:0.5rem 2.5rem;
+	border-radius:10px;
+	background:transparent;
+	border:2px solid #343434;
+	margin-bottom:2rem;
+}

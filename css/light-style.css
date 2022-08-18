@@ -1,29 +1,11 @@
 html,
 body {
   background-color: #FFFFFF;
-  cursor:url(../assets/DarkCursor.png), auto;
+  cursor:url(../assets/LightCursor.png), auto;
 }
 
-body.dark::-webkit-scrollbar {
-  width: 1em;
-}
- 
-body.dark::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-	background-color:#030816;
-}
- 
-body.dark::-webkit-scrollbar-thumb {
-  background-color: #437eeb;
-	border-radius:2px;
-}
-
-a{
-  cursor:url(../assets/DarkCursorActive.png) 0 0, pointer; 
-}
-
-button{
-  cursor:url(../assets/DarkCursorActive.png) 0 0, pointer!important; 
+button, a{
+  cursor:url(../assets/LightCursorActive.png) 0 0, pointer!important; 
   transition:0.3s all ease;
 }
 
@@ -45,6 +27,10 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav a:disabled{
+	color:#333;
+}
+
 nav .nav-link {
   color: #343434;
 }
@@ -61,9 +47,13 @@ header{
   color:#343434;
 }
 
-button, a[role=button]{
+button:not(.mode-button):not(.mode-small-button):not(.close-small-button), a[role="button"]{
   border: 1px solid #343434;
-  color:#343434!important;
+  color:#343434;
+}
+
+.close-small-button{
+	filter:invert(100%);
 }
 
 #about, #solution{
@@ -76,7 +66,7 @@ button, a[role=button]{
 }
 
 .product-box:hover{
-  cursor:url(../assets/DarkCursorActive.png) 0 0, pointer!important; 
+  cursor:url(../assets/LightCursorActive.png) 0 0, pointer!important; 
 }
 
 /* Footer */
@@ -87,6 +77,9 @@ footer {
   color:#343434;
 }
 
+footer .image {
+	filter:invert(100%);
+}
 
 #contact h3 {
   color:#343434;
@@ -94,4 +87,21 @@ footer {
 
 #tech-swipe .swiper-slide img{
 	filter: invert(100%);
+}
+
+.menu-background{
+	background-color:rgba(255, 255, 255, 0.75);
+}
+
+.menu li a{
+	color:#343434;
+}
+
+#openMenuButton img{
+	filter:invert(100%);
+}
+
+#modebutton:hover{
+	border:1px solid #030816;
+	transition:0.3s all ease;
 }
