@@ -11,7 +11,7 @@
 	<meta name="author" content="xunny.id">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="stylesheet" href="<?= base_url() ?>css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 	<link rel="stylesheet" href="<?= base_url() ?>css/main-style.css">
@@ -28,7 +28,7 @@
 					<a class="navbar-brand" href='<?= base_url() ?>'>
 						<img src='<?= base_url() ?>/assets/LogoLight.png' title="Logo PT Terra Nusa Teknologi" alt="Logo PT Terra Nusa Teknologi">
 					</a>
-					<button id='openMenuButton' onclick='openMenu()' class='d-md-none d-inline-block float-right' type='button'><img src="<?= base_url() ?>/assets/icons/menu.png">
+					<button aria-label="Tombol menu" id='openMenuButton' onclick='openMenu()' class='d-md-none d-inline-block float-right' type='button'><img src="<?= base_url() ?>/assets/icons/Menu.png" alt='Ikon menu' title='Ikon menu'>
 					</button>
 				</div>
 				<div class="col-lg-6 col-md-6 d-md-block d-none">
@@ -59,8 +59,8 @@
 
 					<button type="button" aria-label="Learn more button">Mulai</button>
 				</div>
-				<div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 py-5 order-lg-2 order-1 p-3">
-					<img src="<?= base_url() ?>/assets/Hero.png" class="w-100" alt="Hero image" title="Technology Illustration">
+				<div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 py-5 order-lg-2 order-1 px-5">
+					<img src="<?= base_url() ?>/assets/Hero.webp" class="w-100" alt="Gambar utama" title="Ilustrasi Teknologi">
 				</div>
 			</div>
 		</div>
@@ -80,7 +80,7 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="card">
-									<img src='<?= base_url() ?>/assets/icons/Business.png' alt='Ikon bisnis'>
+									<img src='<?= base_url() ?>/assets/icons/Business.webp' title='Ikon bisnis' alt='Ikon bisnis'>
 									<h4>Bisnis</h4>
 									<ul>
 										<li>
@@ -101,7 +101,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="card">
-									<img src='<?= base_url() ?>/assets/icons/Development.png' alt='Ikon pengembangan'>
+									<img src='<?= base_url() ?>/assets/icons/Development.webp' title='Ikon pengembangan' alt='Ikon pengembangan'>
 									<h4>Pengembangan</h4>
 									<ul>
 										<li>
@@ -115,7 +115,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="card">
-									<img src='<?= base_url() ?>/assets/icons/Creative.png' alt='Ikon kreatif'>
+									<img src='<?= base_url() ?>/assets/icons/Creative.webp' title='Ikon kreatif' alt='Ikon kreatif'>
 									<h4>Kreatif</h4>
 									<ul>
 										<li>

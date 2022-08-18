@@ -89,14 +89,14 @@ a[role="button"] {
 }
 
 #product-box-1 {
-	background-image: url("../assets/TPM.png");
+	background-image: url("../assets/TPM.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 
 #product-box-2 {
-	background-image: url("../assets/TTM.png");
+	background-image: url("../assets/TTM.webp");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
