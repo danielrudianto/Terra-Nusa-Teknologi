@@ -1,11 +1,9 @@
 html,
 body.dark {
 	background-color: #0d152e;
-	cursor: url(../assets/DarkCursor.png), auto;
 }
 
 .dark button, .dark a {
-	cursor: url(../assets/DarkCursorActive.png), pointer !important;
 	transition: 0.3s all ease;
 }
 
@@ -64,10 +62,6 @@ body.dark {
 
 .dark .product-box {
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.dark .product-box:hover {
-	cursor: url(../assets/DarkCursorActive.png), pointer !important;
 }
 
 /* Footer */

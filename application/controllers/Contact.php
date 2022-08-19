@@ -32,8 +32,6 @@ class Contact extends CI_Controller
 		if($this->email->send()){
 			echo 1;
 		} else {
-			$error = $this->email->print_debugger();
-			print_r($error);
 			echo 0;
 		}
 	}
