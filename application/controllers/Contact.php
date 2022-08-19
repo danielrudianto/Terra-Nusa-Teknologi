@@ -23,7 +23,7 @@ class Contact extends CI_Controller
 		$this->email->initialize();
 		$this->email->set_newline("\r\n");
 
-		$this->email->from($from, "system@terranusa.tech");
+		$this->email->from("system@terranusa.tech", "system@terranusa.tech");
 		$this->email->to("marketing@terranusa.tech");
 		$this->email->reply_to($email);
 
