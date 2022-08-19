@@ -5,7 +5,7 @@ body.dark {
 }
 
 .dark button, .dark a {
-	cursor: url(../assets/DarkCursorActive.png) 0 0, pointer !important;
+	cursor: url(../assets/DarkCursorActive.png), pointer !important;
 	transition: 0.3s all ease;
 }
 
@@ -67,7 +67,7 @@ body.dark {
 }
 
 .dark .product-box:hover {
-	cursor: url(../assets/DarkCursorActive.png) 0 0, pointer !important;
+	cursor: url(../assets/DarkCursorActive.png), pointer !important;
 }
 
 /* Footer */

@@ -27,7 +27,6 @@
 	<meta name='theme-color' content='#437EEB'>
 
 	<link rel="stylesheet" href="<?= base_url() ?>css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 	<link rel="stylesheet" href="<?= base_url() ?>css/main-style.css">
 	<link rel="stylesheet" href="<?= base_url() ?>css/contact-style.css">
@@ -103,11 +102,11 @@
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12 order-lg-2 order-1">
 					<p class='contact-form-title'>Kami berharap dapat mendengar dari anda kapanpun.</p>
-					<form onsubmit="submitForm()" class='contact-form'>
-						<input required type='text' placeholder='Nama'>
-						<input required type='email' placeholder='Email'>
-						<input required type='tel' placeholder='Nomor Telepon'>
-						<textarea required type='text' style='resize:none' rows='5' placeholder='Pesan anda'></textarea>
+					<form id='contact-form' class='contact-form'>
+						<input required type='text' placeholder='Nama' id='name' name='name'>
+						<input required type='email' placeholder='Email' id='email' name='email'>
+						<input required type='tel' placeholder='Nomor Telepon' id='phone_number' name='phone_number'>
+						<textarea required type='text' style='resize:none' rows='5' placeholder='Pesan anda' name='message' id='message'></textarea>
 
 						<button type='submit'>Kirim</button>
 					</form>
@@ -136,62 +135,26 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-	<script type="text/javascript">
-		const techSwipe = new Swiper('#tech-swipe', {
-			direction: 'horizontal',
-			loop: true,
-			slidesPerView: 1,
-			spaceBetween: 10,
-			centeredSlides: true,
-			breakpoints: {
-				576: {
-					slidesPerView: 1.5,
-					spaceBetween: 30,
-				},
-				768: {
-					slidesPerView: 1.8,
-					spaceBetween: 30,
-				},
-				992: {
-					slidesPerView: 2.5,
-					spaceBetween: 30,
-				}
-			},
-			keyboard: {
-				enabled: true
-			},
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-		});
-
-		const serviceSwipe = new Swiper('#service-swipe', {
-			direction: 'horizontal',
-			loop: false,
-			pagination: true,
-			slidesPerView: 1.2,
-			spaceBetween: 10,
-			centeredSlides: true,
-			breakpoints: {
-				576: {
-					slidesPerView: 1.3,
-					spaceBetween: 30,
-				},
-				768: {
-					slidesPerView: 1.5,
-					spaceBetween: 30,
-				},
-				992: {
-					slidesPerView: 1.5,
-					spaceBetween: 50,
-				}
-			},
-			keyboard: {
-				enabled: true
-			},
-		});
-	</script>
 	<script type='text/javascript' src="<?= base_url() ?>/js/script.js"></script>
+	<script type='text/javascript'>
+		$('#contact-form').submit(function(e) {
+			$('#contact-form input').attr('readonly', true);
+			$('#contact-form textarea').attr('readonly', true);
+			$('#contact-form button').attr('disabled', true);
+
+			e.preventDefault();
+
+			const form = $('#contact-form').serialize();
+			$.ajax({
+				type: 'POST',
+				url: "<?= site_url('Contact/sendEmail') ?>",
+				data: form,
+				success: function(data) {
+					$('#contact-form input').attr('readonly', false);
+					$('#contact-form textarea').attr('readonly', false);
+					$('#contact-form button').attr('disabled', false);
+				},
+			})
+		})
+	</script>
 </body>

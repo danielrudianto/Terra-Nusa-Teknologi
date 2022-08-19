@@ -1,0 +1,53 @@
+header{
+	background-color:#437EEB;
+	padding:5rem 0rem;
+	background-image:url("../assets/Background.png");
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: bottom;
+}
+
+.product-box {
+	width: 100%;
+	aspect-ratio: 16/9;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+	border-radius: 50px;
+	transition: 0.5s all ease;
+}
+
+.product-box:hover {
+	background-size: 110% 110% !important;
+	transition: 0.5s all ease;
+}
+
+#product-box-1 {
+	background-image: url("../assets/TPM.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#product-box-2 {
+	background-image: url("../assets/TTM.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#product-box-3 {
+	background-image: url("../assets/DSE.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#portfolio p{
+    color:#343434;
+    text-align:center;
+    font-size:1.2rem;
+}
+
+.dark #portfolio p{
+    color:white;
+}

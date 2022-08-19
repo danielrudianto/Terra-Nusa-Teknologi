@@ -5,7 +5,7 @@ body {
 }
 
 button, a{
-  cursor:url(../assets/LightCursorActive.png) 0 0, pointer!important; 
+  cursor:url(../assets/LightCursorActive.png), pointer!important; 
   transition:0.3s all ease;
 }
 
@@ -66,7 +66,7 @@ button:not(.mode-button):not(.mode-small-button):not(.close-small-button), a[rol
 }
 
 .product-box:hover{
-  cursor:url(../assets/LightCursorActive.png) 0 0, pointer!important; 
+  cursor:url(../assets/LightCursorActive.png), pointer!important; 
 }
 
 /* Footer */
