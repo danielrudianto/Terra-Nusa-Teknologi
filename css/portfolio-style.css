@@ -12,8 +12,11 @@ header{
 	aspect-ratio: 16/9;
 	margin-bottom: 1rem;
 	margin-top: 2rem;
-	border-radius: 50px;
+	border-radius: 20px;
 	transition: 0.5s all ease;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .product-box:hover {
@@ -23,23 +26,18 @@ header{
 
 #product-box-1 {
 	background-image: url("../assets/TPM.webp");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
 }
 
 #product-box-2 {
 	background-image: url("../assets/TTM.webp");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
 }
 
 #product-box-3 {
 	background-image: url("../assets/DSE.webp");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+}
+
+#product-box-4 {
+	background-image: url("../assets/TEC.webp");
 }
 
 #portfolio p{

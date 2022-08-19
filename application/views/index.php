@@ -72,10 +72,10 @@
 					<h1>Menghubungkan Ide Anda <strong>Tanpa Batas</strong><br><span>Dengan Teknologi</span></h1>
 					<p>Di era teknologi 4.0, pandangan kita terhadap bisnis dan cara berinteraksi dengan konsumen telah berubah. PT Terra Nusa Teknologi hadir untuk menjawab kebutuhan tersebut, dengan personel yang terpercaya dan berpengalaman, PT. Terra Nusa Teknologi berkomitmen untuk membantu anda dalam melakukan digitalisasi perusahaan. Mari menyongsong era teknologi 4.0 bersama kami !</p>
 
-					<button type="button" aria-label="Learn more button">Mulai</button>
+					<a role='button' href='#about' type="button" aria-label="Learn more button">Mulai</a>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 py-5 order-lg-2 order-1 px-5">
-					<img src="<?= base_url() ?>/assets/Hero.webp" class="w-100" alt="Gambar utama" title="Ilustrasi Teknologi">
+					<img src="<?= base_url() ?>assets/Hero.webp" class="w-100" alt="Gambar utama" title="Ilustrasi Teknologi">
 				</div>
 			</div>
 		</div>
@@ -95,7 +95,7 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="card">
-									<img src='<?= base_url() ?>/assets/icons/Business.webp' title='Ikon bisnis' alt='Ikon bisnis'>
+									<img src='<?= base_url() ?>assets/icons/Business.webp' title='Ikon bisnis' alt='Ikon bisnis'>
 									<h4>Bisnis</h4>
 									<ul>
 										<li>
@@ -116,7 +116,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="card">
-									<img src='<?= base_url() ?>/assets/icons/Development.webp' title='Ikon pengembangan' alt='Ikon pengembangan'>
+									<img src='<?= base_url() ?>assets/icons/Development.webp' title='Ikon pengembangan' alt='Ikon pengembangan'>
 									<h4>Pengembangan</h4>
 									<ul>
 										<li>
@@ -130,7 +130,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="card">
-									<img src='<?= base_url() ?>/assets/icons/Creative.webp' title='Ikon kreatif' alt='Ikon kreatif'>
+									<img src='<?= base_url() ?>assets/icons/Creative.webp' title='Ikon kreatif' alt='Ikon kreatif'>
 									<h4>Kreatif</h4>
 									<ul>
 										<li>
@@ -157,19 +157,19 @@
 					<div class="swiper" id='tech-swipe'>
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<img src='<?= base_url() ?>/assets/android.png' alt='Android logo' title='Android logo'>
+								<img src='<?= base_url() ?>assets/android.png' alt='Android logo' title='Android logo'>
 							</div>
 							<div class="swiper-slide">
-								<img src='<?= base_url() ?>/assets/angular.png' alt='Angular logo' title='Angular logo'>
+								<img src='<?= base_url() ?>assets/angular.png' alt='Angular logo' title='Angular logo'>
 							</div>
 							<div class="swiper-slide">
-								<img src='<?= base_url() ?>/assets/gcloud.png' alt='Google Cloud Platform logo' title='Google Cloud Platform logo'>
+								<img src='<?= base_url() ?>assets/gcloud.png' alt='Google Cloud Platform logo' title='Google Cloud Platform logo'>
 							</div>
 							<div class="swiper-slide">
-								<img src='<?= base_url() ?>/assets/ios.png' alt='iOS logo' title='iOS logo'>
+								<img src='<?= base_url() ?>assets/ios.png' alt='iOS logo' title='iOS logo'>
 							</div>
 							<div class="swiper-slide">
-								<img src='<?= base_url() ?>/assets/nodejs.png' alt='Node JS logo' title='Node JS logo'>
+								<img src='<?= base_url() ?>assets/nodejs.png' alt='Node JS logo' title='Node JS logo'>
 							</div>
 						</div>
 					</div>

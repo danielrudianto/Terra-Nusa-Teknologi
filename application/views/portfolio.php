@@ -81,28 +81,20 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class='col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-10 mt-2 mb-3'>
+					<div class="product-box" id="product-box-2"></div>
+					<p>Project Management</p>
+				</div>
+				<div class='col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-10 mt-2 mb-3'>
 					<div class="product-box" id="product-box-1"></div>
-					<p>Terra Project Management</p>
+					<p>Distribution System</p>
 				</div>
 				<div class='col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-10 mt-2 mb-3'>
 					<div class="product-box" id="product-box-3"></div>
 					<p>Website Redesign</p>
 				</div>
 				<div class='col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-10 mt-2 mb-3'>
-					<div class="product-box" id="product-box-2"></div>
-					<p>Terra Distribution System</p>
-				</div>
-				<div class='col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-10 mt-2 mb-3'>
-					<div class="product-box" id="product-box-1"></div>
-					<p>Terra Project Management</p>
-				</div>
-				<div class='col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-10 mt-2 mb-3'>
-					<div class="product-box" id="product-box-3"></div>
-					<p>Website Redesign</p>
-				</div>
-				<div class='col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-10 mt-2 mb-3'>
-					<div class="product-box" id="product-box-2"></div>
-					<p>Terra Distribution System</p>
+					<div class="product-box" id="product-box-4"></div>
+					<p>E-commerce</p>
 				</div>
 			</div>
 		</div>
