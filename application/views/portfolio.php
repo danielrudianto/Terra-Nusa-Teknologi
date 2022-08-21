@@ -53,7 +53,7 @@
 								<a class="nav-link" href="<?= base_url() ?>">Beranda</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?= site_url('About') ?>">Tentang</a>
+								<a class="nav-link" href="<?= site_url('Portfolio') ?>">Portfolio</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" disabled href="#">Kontak</a>
@@ -109,7 +109,7 @@
 					<a href="#">Beranda</a>
 				</li>
 				<li class="vertical-nav-item">
-					<a href="<?= site_url('About') ?>">Tentang</a>
+					<a href="<?= site_url('Portfolio') ?>">Portfolio</a>
 				</li>
 				<li class="vertical-nav-item">
 					<a href="<?= site_url('Contact') ?>">Kontak</a>

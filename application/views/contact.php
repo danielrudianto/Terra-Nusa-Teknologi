@@ -52,7 +52,7 @@
 								<a class="nav-link" href="<?= base_url() ?>">Beranda</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?= site_url('About') ?>">Tentang</a>
+								<a class="nav-link" href="<?= site_url('Portfolio') ?>">Portfolio</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" disabled href="#">Kontak</a>
@@ -121,13 +121,13 @@
 			<button aria-label="Tombol penutup menu" class='close-small-button' id='close-button' onclick="closeMenu()"><img src='<?= base_url() ?>/assets/icons/CloseDark.png' alt='Ikon tutup' title='Tutup menu'></button>
 			<ul>
 				<li class="vertical-nav-item">
-					<a href="#">Beranda</a>
+					<a href="<?= base_url() ?>">Beranda</a>
 				</li>
 				<li class="vertical-nav-item">
-					<a href="<?= site_url('About') ?>">Tentang</a>
+					<a href="<?= site_url('Portfolio') ?>">Portfolio</a>
 				</li>
 				<li class="vertical-nav-item">
-					<a href="<?= site_url('Contact') ?>">Kontak</a>
+					<a disabled href="#">Kontak</a>
 				</li>
 			</ul>
 		</div>
