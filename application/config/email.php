@@ -12,3 +12,5 @@ $config = array(
     'charset' => 'iso-8859-1',
     'wordwrap' => TRUE
 );
+
+?>

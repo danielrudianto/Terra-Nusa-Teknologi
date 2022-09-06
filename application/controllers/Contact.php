@@ -29,10 +29,8 @@ class Contact extends CI_Controller
 
 		$this->email->subject('Pesan baru');
 		$this->email->message('Pesan baru dari ' . $name . '(' . $phone . ').\r\n' . 'Email: ' . $email . '\r\n' . 'Pesan: ' . $message . '.');
-		if($this->email->send()){
-			echo 1;
-		} else {
-			echo 0;
-		}
+
+		$this->email->send(FALSE);
+		$this->email->print_debugger();
 	}
 }
