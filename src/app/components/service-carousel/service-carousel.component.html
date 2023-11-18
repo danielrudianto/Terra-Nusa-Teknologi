@@ -1,0 +1,24 @@
+<div data-aos="fade-up" data-aos-duration="750">
+  <ngx-slick-carousel
+    class="carousel"
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+  >
+    <div ngxSlickItem *ngFor="let service of services" class="slide">
+      <div class="card mx-2">
+        <img
+          class="card-img-top"
+          [src]="service.image"
+          [alt]="service.title"
+          [title]="service.title + ' banner'"
+        />
+        <div class="card-body">
+          <h3 class="card-title">{{ service.title }}</h3>
+          <p class="card-description">
+            {{ service.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </ngx-slick-carousel>
+</div>

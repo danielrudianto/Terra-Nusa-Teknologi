@@ -1,0 +1,14 @@
+<div class="masonry-grid" (window:resize)="onResize($event)">
+  <div *ngFor="let technology of shownStacks">
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <div class="masonry-card">
+        <img
+          src="{{ technology.image }}"
+          [alt]="technology.name"
+          [title]="technology.name + ' banner'"
+        />
+        <h3>{{ technology.name }}</h3>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 mb-5">
+      <app-header-component
+        [text]="'Stacks we love'"
+        [color]="'#006bc0'"
+      ></app-header-component>
+      <h2>Our Technology Stacks</h2>
+      <p>
+        Dalam pendekatan kami yang berpusat pada klien, terdapat dedikasi kami
+        untuk memenuhi setiap kebutuhan unik. Untuk mewujudkan visi mereka, kami
+        membuat solusi perangkat lunak yang dinamis, terampil, dan terintegrasi
+        dengan baik. Dengan menggabungkan inovasi dan fleksibilitas, kami
+        memberikan solusi perangkat lunak yang disesuaikan yang memberdayakan
+        bisnis untuk berkembang.
+      </p>
+      <app-masonry-grid [stacks]="selectedStacks"></app-masonry-grid>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <app-header-component
+        [text]="'Portfolio'"
+        [color]="'#006bc0'"
+      ></app-header-component>
+      <h2>Beberapa pekerjaan kami</h2>
+    </div>
+    <div class="col-12">
+      <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig">
+        <div
+          ngxSlickItem
+          class="mx-2"
+          *ngFor="let portfolio of portfolios; index as i"
+          data-aos="zoom-out"
+          data-aos-duration="i * 1000"
+        >
+          <img
+            src="{{ portfolio.image }}"
+            alt="{{ portfolio.title }} banner"
+            title="{{ portfolio.title }} banner"
+            width="100%"
+          />
+          <div class="description-card">
+            <h3>{{ portfolio.title }}</h3>
+            <p>{{ portfolio.description }}</p>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="3160075503484859111" datatype="html">
+        <source> Welcome to TerraTech, where innovation knows no bounds! We are PT Terra Nusa Teknologi, Indonesia&apos;s premier IT Solution company since 2021. With our cutting-edge expertise in Application and Web development, we forge the future by crafting transformative digital solutions. </source>
+        <target> Selamat datang di TerraTech, di mana inovasi tidak mengenal batas! Kami adalah PT Terra Nusa Teknologi, perusahaan Solusi IT terkemuka di Indonesia sejak 2021. Dengan keahlian canggih kami dalam pengembangan Aplikasi dan Web, kami membentuk masa depan dengan menciptakan solusi digital yang transformatif. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/hero-page/hero-page.component.html</context>
+          <context context-type="linenumber">40,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2045779543869682721" datatype="html">
+        <source>Get Started</source>
+        <target>Mulai</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/hero-page/hero-page.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8525213662266893834" datatype="html">
+        <source>Contact us</source>
+        <target>Hubungi kami</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/hero-page/hero-page.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2311964051547637815" datatype="html">
+        <source>Satisfied clients</source>
+        <target>Klien puas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/hero-page/hero-page.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3321988086739669536" datatype="html">
+        <source>Projects completed</source>
+        <target>Proyek terselesaikan</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/hero-page/hero-page.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4689951881392088828" datatype="html">
+        <source>Years of innovating</source>
+        <target>Tahun berinovasi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/hero-page/hero-page.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5870972922070976580" datatype="html">
+        <source> Transforming Visions into Reality: Your One-Stop Destination for Cutting-Edge Solutions </source>
+        <target>Mengubah Visi menjadi Kenyataan: Destinasi One-Stop Anda untuk Solusi Cutting-Edge</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/service-page/service-page.component.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2778921936808825495" datatype="html">
+        <source> Welcome to our General Services hub, where innovation knows no bounds. Whether it&apos;s crafting stunning websites, designing powerful desktop applications, or building intuitive mobile apps, our expert team thrives on turning ideas into exceptional realities. With expertise in AI and ML modelling, and harnessing the power of cloud computing, we propel your business to new heights. Explore the boundless possibilities with our dynamic suite of services tailored to fuel your success. </source>
+        <target>Selamat datang di pusat Layanan Umum kami, di mana inovasi tidak mengenal batas. Baik itu merancang situs web yang menakjubkan, merancang aplikasi desktop yang kuat, atau membangun aplikasi seluler yang intuitif, tim ahli kami berkembang dengan mengubah ide menjadi kenyataan yang luar biasa. Dengan keahlian dalam pemodelan AI dan ML, dan memanfaatkan kekuatan komputasi awan, kami mendorong bisnis Anda ke puncak baru. Jelajahi kemungkinan tanpa batas dengan rangkaian layanan dinamis kami yang dirancang untuk memacu kesuksesan Anda.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/service-page/service-page.component.html</context>
+          <context context-type="linenumber">12,20</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

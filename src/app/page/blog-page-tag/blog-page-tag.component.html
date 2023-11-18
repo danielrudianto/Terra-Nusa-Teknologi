@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <button class="back-button" (click)="NavigateToHome()">
+        <mat-icon>chevron_left</mat-icon> Kembali
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div
+      class="col-lg-4 col-md-6 col-sm-10 col-xs-12 mb-3"
+      *ngFor="let b of blogs"
+      s
+      [routerLink]="b.title | encodePipe : b.id"
+    >
+      <div
+        class="blog-card"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+      >
+        <div class="card-body h-100 p-0">
+          <img
+            class="blog-image"
+            [src]="'https://terranusa.tech/api/assets/blog/' + b.id + '.webp'"
+          />
+          <h3 class="px-3 mt-2">{{ b.displayTitle }}</h3>
+          <div class="px-3">
+            <p class="line-clamp-4">{{ b.subtitle }}</p>
+          </div>
+          <div class="blog-info px-3 py-3">
+            <p class="mb-0">
+              <span class="post-date">{{
+                b.created_date | date : "dd MMM YYYY"
+              }}</span>
+              <span>&nbsp;</span>
+              <span class="dot"></span>
+              <span>&nbsp;</span>
+              <span class="readingTime"
+                >{{ b.words / 100 | number : "1.0-0" }} minutes read</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<mat-paginator
+  (page)="onPageChange($event)"
+  [length]="total"
+  [pageSizeOptions]="[10]"
+  [pageIndex]="page - 1"
+  aria-label="Select page"
+>
+</mat-paginator>
+<mat-divider class="mb-3"></mat-divider>
+<app-footer-page></app-footer-page>

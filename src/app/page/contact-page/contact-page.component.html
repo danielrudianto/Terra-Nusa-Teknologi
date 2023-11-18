@@ -1,0 +1,66 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <app-header-component
+          [text]="'Stay in touch'"
+          [color]="'#2845b2'"
+        ></app-header-component>
+        <h2 class="d-none">Kontak kami</h2>
+        <p class="h2">
+          Siap untuk melakukan transformasi bisnis Anda? Mari bekerja sama!
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+        <form
+          [formGroup]="contactFormGroup"
+          class="form-wrapper"
+          data-aos="fade-up"
+          (ngSubmit)="onSubmit()"
+        >
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label>Nama</mat-label>
+            <input matInput formControlName="name" />
+          </mat-form-field>
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+          </mat-form-field>
+          <mat-form-field class="w-100" appearance="outline">
+            <mat-label>Pesan</mat-label>
+            <textarea matInput formControlName="message"></textarea>
+          </mat-form-field>
+
+          <button
+            mat-raised-button
+            color="primary"
+            [disabled]="!contactFormGroup.valid || isLoading"
+          >
+            Submit
+          </button>
+        </form>
+
+        <p>Atau kontak kami melalui:</p>
+        <ul>
+          <li>
+            <a
+              title="Mailing contact link"
+              href="mailto:marketing@terranusa.tech"
+              >marketing&#64;terranusa.tech</a
+            >
+          </li>
+          <li>
+            <a title="Whatsapp contact link" href="tel:+622188898292"
+              >(021)-88898292</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 d-lg-block d-none">
+        <app-contact-video></app-contact-video>
+      </div>
+    </div>
+  </div>
+</div>

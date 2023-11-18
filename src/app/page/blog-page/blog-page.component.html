@@ -1,0 +1,114 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-12" *ngIf="!isLoading">
+      <div class="blog-section-wrapper" *ngFor="let blog of blogs">
+        <div class="blog-section-header">
+          <h2>{{ blog.name }}</h2>
+          <button
+            class="more-blogs"
+            (click)="NavigateToTag(blog.name)"
+            *ngIf="blog.name != 'Featured Blogs'"
+          >
+            More Blogs <mat-icon>chevron_right</mat-icon>
+          </button>
+        </div>
+        <div class="blog-section-content">
+          <div class="row mb-5">
+            <div
+              class="col-md-4 col-lg-4 col-sm-4 d-flex align-items-stretch"
+              [class.mb-4]="windowsSize == 1"
+            >
+              <div
+                class="blog-card highlight"
+                [routerLink]="
+                  blog.blogs[0].title | encodePipe : blog.blogs[0].id
+                "
+              >
+                <img
+                  src="https://terranusa.tech/api/assets/blog/{{
+                    blog.blogs[0].id
+                  }}.webp"
+                  [alt]="blog.blogs[0].displayTitle"
+                  class="w-100"
+                />
+                <div class="card-body">
+                  <h3>{{ blog.blogs[0].displayTitle }}</h3>
+                  <div class="flex-grow-1">
+                    <p class="line-clamp-4">{{ blog.blogs[0].subtitle }}</p>
+                  </div>
+
+                  <div class="blog-info">
+                    <p>
+                      <span class="post-date">{{
+                        blog.blogs[0].created_date | date : "dd MMM YYYY"
+                      }}</span>
+                      <span>&nbsp;</span>
+                      <span class="dot"></span>
+                      <span>&nbsp;</span>
+                      <span class="readingTime"
+                        >{{
+                          blog.blogs[0].words / 250 | number : "1.0-0"
+                        }}
+                        minutes read</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-8 col-sm-8">
+              <mat-grid-list
+                [cols]="windowsSize == 3 ? 2 : 1"
+                rowHeight="1.5:1"
+                gutterSize="16px"
+              >
+                <mat-grid-tile
+                  *ngFor="
+                    let b of blog.blogs
+                      | slice : 1
+                      | slice : (windowsSize == 3 ? 0 : -2);
+                    index as i
+                  "
+                >
+                  <div
+                    class="blog-card"
+                    [routerLink]="b.title | encodePipe : b.id"
+                  >
+                    <div class="card-body h-100 p-0">
+                      <div
+                        class="blog-image"
+                        [style.background-image]="
+                          'url(https://terranusa.tech/api/assets/blog/' +
+                          b.id +
+                          '.webp)'
+                        "
+                      ></div>
+                      <h3 class="px-3 mt-2">{{ b.displayTitle }}</h3>
+                      <div class="blog-info px-3">
+                        <p class="mb-0">
+                          <span class="post-date">{{
+                            b.created_date | date : "dd MMM YYYY"
+                          }}</span>
+                          <span>&nbsp;</span>
+                          <span class="dot"></span>
+                          <span>&nbsp;</span>
+                          <span class="readingTime"
+                            >{{ b.words / 100 | number : "1.0-0" }} minutes
+                            read</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </mat-grid-tile>
+              </mat-grid-list>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<mat-divider class="mb-3"></mat-divider>
+<app-footer-page></app-footer-page>

@@ -1,0 +1,11 @@
+identifier: lcp23dce5fr8h6m4
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: terra-nusa-teknologi
+homeFolder: E:\source\repos\Terra Nusa Teknologi\Terra Nusa Teknologi Website
+distFolder: ./dist/terra-nusa-teknologi
+outDir: E:\source\repos\Terra Nusa Teknologi\Terra Nusa Teknologi Website\dist\static
+handle404: ''
+allowErrorCollect: true

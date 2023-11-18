@@ -1,0 +1,33 @@
+.example-card {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+}
+
+.card-description {
+  font-family: "TW Cen MT", sans-serif;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: rgb(82, 82, 82);
+  /* Make it maximum 4 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+}
+
+.example-card.active {
+  width: 400px;
+  color: #fff;
+  background-color: #3f51b5;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}

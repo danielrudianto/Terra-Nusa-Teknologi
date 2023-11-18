@@ -1,0 +1,52 @@
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  background-color: #fafafa;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+button {
+  padding: 1.5rem 3rem;
+  font-family: "TW Cen MT", sans-serif;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  border: none;
+  /* Character spacing */
+  letter-spacing: -0.0125rem;
+}
+
+.h2 {
+  font-family: "Tw Cen MT";
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.15;
+  margin-top: 0;
+  /*  letter spacing */
+  letter-spacing: -0.2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+  font-family: "TW Cen MT", sans-serif;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+}

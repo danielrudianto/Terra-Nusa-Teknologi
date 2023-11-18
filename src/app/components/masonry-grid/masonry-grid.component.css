@@ -1,0 +1,43 @@
+.masonry-grid {
+  column-count: 5; /* Adjust the number of columns as desired */
+  gap: 20px; /* Adjust the gap between cards as desired */
+}
+
+.masonry-card {
+  width: 100%; /* Set the width of the cards based on your design */
+  break-inside: avoid; /* Prevent cards from breaking across columns */
+  margin-bottom: 10px; /* Add space between cards */
+  overflow: hidden; /* Hide overflowing content in case of varying card heights */
+  border: 1px solid #ddd; /* Optional: Add borders for card styling */
+  border-radius: 5px; /* Optional: Add border-radius for card styling */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box-shadow for card styling */
+  perspective: 1000px;
+  aspect-ratio: 1/2;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .masonry-grid {
+    column-count: 4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+
+h3 {
+  display: none;
+}

@@ -1,0 +1,24 @@
+img {
+  width: 25%;
+  height: auto;
+  margin: auto;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+a,
+p {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.footer-item {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-item {
+    margin-bottom: 1rem;
+  }
+}

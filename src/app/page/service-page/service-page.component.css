@@ -1,0 +1,16 @@
+h2 {
+  font-family: "Tw Cen MT";
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.15;
+  margin-top: 0;
+  /*  letter spacing */
+  letter-spacing: -0.2rem;
+}
+
+p {
+  color: rgb(116, 116, 116);
+  font-size: 1rem;
+  font-family: "TW Cen MT";
+  margin-bottom: 1rem;
+}

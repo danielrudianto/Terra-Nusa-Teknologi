@@ -1,0 +1,115 @@
+.content p,
+.content li {
+  font-family: "PT Sans";
+  font-size: 1.2rem;
+  margin-top: 0;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.content h2 {
+  font-family: "PT Sans";
+  font-weight: 700;
+  color: #4d4d4d;
+  font-size: 1.95rem;
+}
+
+.content h3 {
+  font-family: "PT Sans";
+  font-weight: 700;
+  color: #4d4d4d;
+  font-size: 1.75rem;
+}
+
+.share-bottom-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.share-bottom-wrapper a {
+  border-radius: 50%;
+  border: 1px solid #999999;
+  color: #999999;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.share-bottom-wrapper a > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+aside {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.content .code-wrapper {
+  margin-bottom: 1rem;
+  background-color: black;
+  padding: 1rem;
+}
+
+.content .code-wrapper p {
+  color: white;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0 !important;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+.content .code-wrapper .comment {
+  color: #999999;
+}
+
+.content .code-wrapper span {
+  color: rgb(214, 51, 132);
+}
+
+.content .code-wrapper .tab-1 {
+  margin-left: 1.5rem;
+}
+
+.content .code-wrapper .tab-2 {
+  margin-left: 3rem;
+}
+
+.content .code-wrapper .tab-3 {
+  margin-left: 4.5rem;
+}
+
+.content blockquote {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: #4d4d4d;
+  background-color: #ebebeb;
+  padding: 1rem;
+  margin-top: 0;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  border-left: 8px solid #4d4d4d;
+  font-family: "PT Sans";
+}

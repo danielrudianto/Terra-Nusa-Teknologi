@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add TW Cen MT as font family */
+
+html,
+body {
+  max-width: 99%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  /* overflow-x:hidden; */
+}
+
+section {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Tw Cen MT";
+  src: url("assets/fonts/TW Cen MT/TwCenMTStd-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Tw Cen MT";
+  src: url("assets/fonts/TW Cen MT/TwCenMTStd-Light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Tw Cen MT";
+  src: url("assets/fonts/TW Cen MT/TwCenMTStd.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Tw Cen MT";
+  src: url("assets/fonts/TW Cen MT/TwCenMTStd-Italic.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("assets/fonts/PT Sans Narrow/PTSansNarrow-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("assets/fonts/PT Sans Narrow/PTSansNarrow-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("assets/fonts/PT Sans/PTSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("assets/fonts/PT Sans/PTSans-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("assets/fonts/PT Sans/PTSans-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("assets/fonts/PT Sans/PTSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

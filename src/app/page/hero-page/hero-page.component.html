@@ -1,0 +1,100 @@
+<section>
+  <app-navbar></app-navbar>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-12 pe-lg-5 pe-0">
+        <app-header-component
+          [text]="'Partner Solusi IT Terdepan Anda'"
+          [color]="'#2845b2'"
+        ></app-header-component>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine"
+        >
+          <h1
+            aria-label="Forging in the Futrure With Innovative IT"
+            class="mb-5"
+          >
+            F<span class="text-decoration o">o</span>r<span
+              class="text-decoration g"
+              >g</span
+            >in<span class="text-decoration g">g</span> the Future with Inn<span
+              class="text-decoration o"
+              >o</span
+            >vative IT
+            <span class="d-inline-block text-nowrap"
+              >S<span class="text-decoration o">o</span>luti<span
+                class="text-decoration o"
+                >o</span
+              >ns</span
+            >
+          </h1>
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="0"
+          data-aos-easing="ease-in-sine"
+        >
+          <p class="mb-5">
+            Selamat datang di TerraTech, dimana inovasi tidak mengenal batas!
+            Kami adalah PT Terra Nusa Teknologi, perusahaan solusi IT terkemuka
+            Indonesia sejak tahun 2022. Dengan keahlian terdepan kami dalam
+            pengembangan Aplikasi dan Web, kami membentuk masa depan dengan
+            menciptakan solusi digital yang transformatif.
+          </p>
+        </div>
+        <div>
+          <button
+            [@fadeIn]="start ? 'complete' : 'start'"
+            class="start-button"
+            (click)="onClick('service')"
+          >
+            <span>Mulai</span><span class="flex-grow-1"></span>
+            <i class="bi bi-arrow-right"></i>
+          </button>
+          <button
+            [@fadeIn]="start ? 'complete' : 'start'"
+            class="contact-button"
+            (click)="onClick('contact')"
+          >
+            <span>Kontak kami</span><span class="flex-grow-1"></span>
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-8 col-sm-12 col-12 d-lg-block d-none">
+        <div class="video-container">
+          <video
+            #videoplayer
+            id="video"
+            loop
+            class="w-100"
+            src="/assets/sphere.mp4"
+            autoplay="true"
+          ></video>
+          <div class="mask"></div>
+        </div>
+        <div class="stats-wrapper">
+          <div class="stats-item">
+            <p class="text-center h3" [countUp]="8" [duration]="1500"></p>
+            <p class="text-center">Klien puas</p>
+          </div>
+          <div class="stats-item">
+            <p class="text-center h3" [countUp]="18" [duration]="1500"></p>
+            <p class="text-center">Proyek terselesaikan</p>
+          </div>
+          <div class="stats-item">
+            <p
+              class="text-center h3"
+              [countUp]="date.getFullYear() - 2021"
+              [duration]="1500"
+            ></p>
+            <p class="text-center">Tahun berinovasi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
