@@ -167,6 +167,33 @@
           </svg>
         </a>
       </div>
+      <mat-divider></mat-divider>
+
+      <ul class="keyword-wrapper">
+        <li class="keyword-pill" *ngFor="let keyword of keywords">
+          {{ keyword }}
+        </li>
+      </ul>
+
+      <div class="row next-row">
+        <div class="col-md-6 col-xs-12 text-right pr-0 eq" style="flex-grow: 1">
+          <div class="next-wrapper" style="border-right: 1px solid #eee">
+            <a [routerLink]="before.url" *ngIf="before != null"
+              ><< {{ before.displayTitle }}</a
+            >
+          </div>
+        </div>
+        <div
+          class="col-md-6 col-xs-12 text-right pr-0 eq"
+          style="margin-left: auto; flex-grow: 1"
+        >
+          <div class="next-wrapper">
+            <a [routerLink]="after.url" *ngIf="after != null"
+              >{{ after.displayTitle }} >></a
+            >
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

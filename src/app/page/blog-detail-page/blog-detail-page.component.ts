@@ -24,6 +24,11 @@ export class BlogDetailPageComponent implements OnInit {
   created_date: string = '';
   words: number = 0;
 
+  before: any = null;
+  after: any = null;
+
+  keywords: string[] = [];
+
   isLoading: boolean = true;
   id: number | null = null;
 
@@ -124,6 +129,22 @@ export class BlogDetailPageComponent implements OnInit {
           this.id = data.id;
           this.created_date = data.created_date;
           this.words = data.words;
+
+          if (data.before) {
+            this.before = data.before;
+            this.before.url = `/Blog/${data.before.id}/${encodeURIComponent(
+              data.before.title.toString().replaceAll(' ', '-').toLowerCase()
+            )}`;
+          }
+
+          if (data.after) {
+            this.after = data.after;
+            this.after.url = `/Blog/${data.after.id}/${encodeURIComponent(
+              data.after.title.toString().replaceAll(' ', '-').toLowerCase()
+            )}`;
+          }
+
+          this.keywords = data.keywords.toLowerCase().split(',');
 
           this.titleService.setTitle(
             `Terra Nusa Teknologi | Blog | ${data.title}`
