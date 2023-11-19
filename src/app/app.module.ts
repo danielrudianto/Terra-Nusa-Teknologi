@@ -46,6 +46,7 @@ import { BlogPageTagComponent } from './page/blog-page-tag/blog-page-tag.compone
 import { SafeHtmlPipe } from './pipes/safehtml.pipe';
 
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { ProductPageComponent } from './page/product-page/product-page.component';
 
 @Injectable({
   providedIn: 'root',
@@ -74,6 +75,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     SafeHtmlPipe,
     BlogDetailPageContentComponent,
     BlogPageTagComponent,
+    ProductPageComponent,
   ],
   imports: [
     CommonModule,

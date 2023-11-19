@@ -1,0 +1,126 @@
+h2 {
+  font-family: "Tw Cen MT";
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.15;
+  margin-top: 0;
+  /*  letter spacing */
+  letter-spacing: -0.2rem;
+}
+
+p,
+li {
+  color: rgb(116, 116, 116);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-family: "TW Cen MT";
+  margin-bottom: 1rem;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ol li {
+  counter-increment: item;
+}
+
+ol li:before {
+  content: counter(item);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: #364aae;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+.action-button {
+  /* background-color: #364aae; */
+  /* Red color */
+  background-color: #da4541;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 10px 11px 13px -6px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 10px 11px 13px -6px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 10px 11px 13px -6px rgba(0, 0, 0, 0.28);
+}
+
+.action-button:hover {
+  background-color: #4879ec;
+  transition: all 0.2s ease-in-out;
+
+  box-shadow: 10px 11px 13px -6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 11px 13px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 11px 13px -6px rgba(0, 0, 0, 0.5);
+}
+
+#google-cloud-platform-border {
+  /* 1.472 #DA4541 */
+  /* 2.417 #4879ec */
+  /* 0.625 #509b53*/
+  /* 1.181 #f1b538*/
+  width: 100%;
+  height: 5px;
+  background: url("/assets/images/gcp-border.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+#google-cloud-platform-image-wrapper {
+  position: relative;
+  aspect-ratio: 1/1;
+}
+
+#google-cloud-platform-image-wrapper div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#google-cloud-platform-image-1 {
+  background: url("/assets/images/gcp-banner-1.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#google-cloud-platform-image-2 {
+  background: url("/assets/images/gcp-banner-2.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#google-cloud-platform-image-3 {
+  /* Circle with 40% width diameter and white color */
+  background-color: white;
+  border-radius: 50%;
+  width: 40%;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  /* Give shadow grey with opacity */
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#google-cloud-platform-products {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#google-cloud-platform-products img {
+  position: absolute;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+}

@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="row mb-5" id="google-cloud-platform">
+    <div class="col-12">
+      <app-header-component
+        [text]="'Produk'"
+        [color]="'#006bc0'"
+      ></app-header-component>
+      <h2>Produk Andalan Kami</h2>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-10 col-12">
+      <img
+        src="/assets/images/gcp.png"
+        alt="Google Cloud Platform"
+        class="img-fluid"
+        data-aos="fade-up"
+        data-aos-delay="0"
+      />
+      <p data-aos="fade-up" data-aos-delay="0">
+        Terra Nusa Teknologi turut andil dalam mewujudkan potensi bisnis Anda
+        dengan mengadopsi teknologi untuk menghadapi tantangan masa depan
+        bisnis.
+      </p>
+      <ol>
+        <li data-aos="fade-up" data-aos-delay="50">
+          Memberikan dukungan untuk inovasi bisnis Anda dengan biaya operasional
+          yang lebih efisien.
+        </li>
+        <li data-aos="fade-up" data-aos-delay="150">
+          Meningkatkan efisiensi operasional usaha Anda.
+        </li>
+        <li data-aos="fade-up" data-aos-delay="250">
+          Menyediakan fondasi kerja yang tangguh untuk mendukung sistem
+          perusahaan Anda.
+        </li>
+      </ol>
+      <p data-aos="fade-up" data-aos-delay="300">
+        Jelajahi peluang tak terbatas di cloud dengan memanfaatkan Google Cloud
+        Platform. Migrasikan ke Google Cloud Platform hari ini dan mulailah
+        berinovasi sekarang juga!
+      </p>
+
+      <button
+        class="action-button mb-5"
+        data-aos="fade-up"
+        data-aos-delay="350"
+        (click)="scollToContact()"
+      >
+        Kontak Kami
+      </button>
+    </div>
+    <div
+      class="col-xl-6 col-lg-6 d-lg-block d-none"
+      id="google-cloud-platform-image-wrapper"
+    >
+      <div id="google-cloud-platform-image-1" data-aos="fade-left"></div>
+      <div id="google-cloud-platform-image-2" data-aos="fade-down-right"></div>
+      <span id="google-cloud-platform-image-3" data-aos="fade-up">
+        <div id="google-cloud-platform-products">
+          <img
+            src="/assets/images/gcp-vm.png"
+            [@imageAnimation]="selectedIndex == 0 ? 'enter' : 'leave'"
+          />
+          <img
+            src="/assets/images/gcp-audit-logs.png"
+            [@imageAnimation]="selectedIndex == 1 ? 'enter' : 'leave'"
+          />
+          <img
+            src="/assets/images/gcp-monitoring.png"
+            [@imageAnimation]="selectedIndex == 2 ? 'enter' : 'leave'"
+          />
+        </div>
+      </span>
+    </div>
+    <div class="col-12" id="google-cloud-platform-border"></div>
+  </div>
+</div>
