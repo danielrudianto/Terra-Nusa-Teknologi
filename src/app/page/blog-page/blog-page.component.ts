@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.development';
 import { getWindow } from 'ssr-window';
@@ -38,10 +39,12 @@ export class BlogPageComponent implements OnInit {
   constructor(
     private http: HttpClient,
     private snackBar: MatSnackBar,
-    private router: Router
+    private router: Router,
+    private titleService: Title
   ) {}
 
   ngOnInit(): void {
+    this.titleService.setTitle('Terra Nusa Teknologi | Blog');
     this.fetchBlogs();
 
     getWindow().onresize = () => {
@@ -63,7 +66,6 @@ export class BlogPageComponent implements OnInit {
   }
 
   fetchBlogs() {
-    console.log(environment.apiUrl);
     this.isLoading = true;
     this.http
       .get(`${environment.apiUrl}/blog`)
