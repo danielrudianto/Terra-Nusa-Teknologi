@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row justify-content-center">
+    <div
+      class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-12"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <h2 id="motto-text">
+        Selamat datang di halaman Karier<br />
+        <span>Terra Nusa Teknologi</span>
+      </h2>
+      <p>
+        Di Terra Nusa Teknologi, kami meyakini bahwa bakat hebat adalah dasar
+        kesuksesan kami. Kami bukan sekadar perusahaan; kami adalah komunitas
+        individu yang bersemangat, berdedikasi untuk mendorong inovasi, dan
+        mencapai keunggulan. Seiring dengan pertumbuhan kami dan kontribusi
+        positif di industri teknologi, kami selalu mencari individu berbakat
+        untuk bergabung dalam tim dinamis kami.
+      </p>
+    </div>
+    <div
+      class="col-xl-5 col-lg-6 col-md-6 d-lg-block d-none"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <img
+        src="/assets/images/hero-image.png"
+        alt="Drilling rig at one of PT Alpha Konstruksi Nusantara project"
+        id="hero-image"
+      />
+    </div>
+  </div>
+  <div class="row" *ngIf="data.length == 0">
+    <div class="col-12">
+      <p>Maaf saat ini tidak ada lowongan pekerjaan yang tersedia.</p>
+    </div>
+  </div>
+  <div
+    class="row"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    *ngIf="data.length > 0"
+  >
+    <div
+      class="col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12"
+      *ngFor="let datum of data"
+    >
+      <h3 class="line-clamp-2">{{ datum.title }}</h3>
+      <p class="line-clamp-5">{{ datum.intro }}</p>
+      <button class="action-button" (click)="openVacation(datum)">
+        Read more
+      </button>
+    </div>
+  </div>
+</div>
+<mat-divider class="mt-5"></mat-divider>
+<app-footer-page></app-footer-page>

@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { HeroPageComponent } from './page/hero-page/hero-page.component';
@@ -47,6 +48,8 @@ import { SafeHtmlPipe } from './pipes/safehtml.pipe';
 
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { ProductPageComponent } from './page/product-page/product-page.component';
+import { BoldPipe } from './pipes/bold.pipe';
+import { CareerDetailPageComponent } from './page/career-page/career-detail-page/career-detail-page.component';
 
 @Injectable({
   providedIn: 'root',
@@ -73,9 +76,11 @@ import { ProductPageComponent } from './page/product-page/product-page.component
     BlogDetailPageComponent,
     EncodePipePipe,
     SafeHtmlPipe,
+    BoldPipe,
     BlogDetailPageContentComponent,
     BlogPageTagComponent,
     ProductPageComponent,
+    CareerDetailPageComponent,
   ],
   imports: [
     CommonModule,
@@ -96,6 +101,7 @@ import { ProductPageComponent } from './page/product-page/product-page.component
     MatIconModule,
     MatPaginatorModule,
     ScullyLibModule,
+    MatDialogModule,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],

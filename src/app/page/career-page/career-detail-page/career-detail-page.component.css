@@ -1,0 +1,30 @@
+h2 {
+  font-family: "Poppins" !important;
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: black;
+  margin-top: 1rem;
+  line-height: 1.2;
+}
+
+p {
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: black;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+li {
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: black;
+  margin-top: 1rem;
+  line-height: 1.5;
+}

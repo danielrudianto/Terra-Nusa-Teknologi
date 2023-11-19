@@ -74,6 +74,23 @@ section {
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Italic.ttf");
+  font-style: italic;
+}
+
 html,
 body {
   height: 100%;
@@ -81,4 +98,12 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.career-detail-dialog {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-width: 640px !important;
 }

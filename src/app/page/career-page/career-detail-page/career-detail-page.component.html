@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>{{ data.title }}</h2>
+<mat-dialog-content>
+  <p>{{ data.intro }}</p>
+  <h3>Tanggung Jawab</h3>
+  <ul>
+    <li *ngFor="let desc of data.description">
+      {{ desc }}
+    </li>
+  </ul>
+  <h3>Kualifikasi</h3>
+  <ul>
+    <li *ngFor="let qual of data.qualification" [innerHtml]="qual | bold"></li>
+  </ul>
+
+  <h3>Benefit</h3>
+  <ul>
+    <li *ngFor="let benefit of data.benefit">
+      {{ benefit }}
+    </li>
+  </ul>
+  <p>
+    Kirimkan lamaran anda ke
+    <a href="mailto:hrd@terranusa.tech" target="_blank">email kami</a>.
+    Lampirakn CV anda dengan subject <b>[ID {{ id }}]</b>.
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Tutup</button>
+</mat-dialog-actions>
