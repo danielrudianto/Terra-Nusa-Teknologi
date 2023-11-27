@@ -119,11 +119,11 @@ p {
 .video-container {
   position: relative;
   overflow: hidden;
-}
-
-.video-container video {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1/1;
+  background: url("/assets/sphere.mp4");
+  background-size: cover;
+  background-position: center;
 }
 
 .mask {
@@ -169,6 +169,6 @@ p {
 }
 
 .h3 {
-  font-size:1.75rem;
-  font-weight: bold;  
+  font-size: 1.75rem;
+  font-weight: bold;
 }
